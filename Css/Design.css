@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.5rem;
+    font-family: "Lato", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+}
+
+/* Logo styling */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+/* Styling for the menu button */
+#menu-btn {
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  display: block;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  background-color: red;
+}
+
+/* Menu styling */
+#nav-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  width: 200px;
+  background-color: white;
+  color: #333;
+  border-radius: 0 0 5px 5px;
+  z-index: 1;
+}
+
+/* Styling for the close button */
+#close-btn {
+  font-size: 20px;
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  display: inline-block;
+}
+
+
+/* Style the menu items */
+#nav-menu ul {
+  list-style-type: none;
+  margin: 40px 0 0;
+  padding: 0;
+}
+
+#nav-menu li {
+  padding: 10px;
+  border-bottom: 1px solid #444;
+  text-align: center;
+}
+
+#nav-menu li:last-child {
+  border-bottom: none;
+}
+
+#nav-menu a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+#nav-menu a:hover {
+  background-color: green;
+}
+
+/* Show menu when checkbox is checked */
+#menu-toggle:checked + #menu-btn + #nav-menu {
+  display: block;
+}
+
+.sec {
+  position: relative;  /* Set position for pseudo-element */
+  background-image: url('../img/Design.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;  /* Ensure the shadow doesn't exceed section bounds */
+}
+
+.sec::before {
+  content: '';  /* Mandatory for pseudo-elements */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);  /* Adjust opacity for the shadow effect */
+    /* Ensures the shadow is behind text but above the background image */
+}
+
+.felix {
+  color: white;
+  
+}
+.feature-card i {
+  font-size: 2rem;
+  color: #6eb7fc;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.complete {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.ink{
+  margin-top: 2.5rem;
+  text-decoration: underline;
+  padding: 1rem;
+}
+.nice {
+  padding: 1.8rem;
+}
+.speech {
+  padding: 1.8rem;
+  font-size: 1rem;
+}
+.appear {
+  background-image: url('../img/Books.jpg');
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.see {
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.pra {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.Button {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  background-color: red;
+  border-radius: 25px;
+  border: 1px solid red;
+  color: white;
+  width: 140px;
+  height: 40px;
+  box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.75);  /* Red glowing shadow */
+  transition: box-shadow 0.3s ease;  /* Smooth transition effect */
+}
+
+
+
+/* Optional: Add a hover effect to enhance the glow */
+button:hover {
+  box-shadow: 0 0 25px 10px rgba(255, 0, 0, 0.9);
+}
+.food {
+  background-image: url('../img/summer.jpg');
+  height:80vh;
+  padding: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fun {
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.come {
+  margin-top: 3rem;
+  font-size: 1rem;
+}
+.med {
+  background-image: url('../img/abore.jpg');
+  height:60vh;
+  padding: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bore {
+  padding: 1rem;
+  background-color: #3f3c3c;
+}
+.men {
+  margin-top: 3rem;
+  font-size: 1rem;
+}
+.service {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.branding {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.core {
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.graph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.7rem;
+}
+figcaption {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+}
+.sir {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.7rem;
+}
+.wind {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.7rem;
+}
+.Not {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.7rem;
+}
+.Tooth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.7rem;
+}
+.Lap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.7rem;
+}
+.Enviro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.7rem;
+}
+.doll {
+  text-align: center;
+}
+.space {
+  margin-top: 3.5rem;
+  font-size: 1rem;
+}
+.impo {
+  background-color: #3f3c3c;
+}
+.glace {
+  margin-top: 2rem;
+  text-align: center;
+}
+.nail {
+  display: flex;
+  gap: 0.3rem;
+  padding: 1rem;
+}
+.nail img {
+  width: 170px;
+  height: 180px;
+}
+
+    
+/* Target all images within the 'best work' section */
+.nail img,
+.complx img,
+.hard img,
+.easy img,
+.nym img,
+.erase img {
+  width: 150px;        /* Set a consistent width */
+  height: 150px;       /* Set a consistent height */
+  padding: 0.2rem;     /* Consistent padding */
+  margin-top: 0.2rem;  /* Reduce margin-top */
+  object-fit: cover;   /* Ensure the image maintains its aspect ratio and fills the space */
+}
+
+/* Target the containers to remove extra gap */
+.nail,
+.complx,
+.hard,
+.easy,
+.nym,
+.erase {
+  display: flex;
+  gap: 0.2rem;         /* Set a smaller gap between images */
+  padding: 0.5rem;     /* Maintain overall padding */
+  justify-content: center; /* Center the images within the container */
+}
+/* Initial state of the .nice element */
+/* Initial state before scrolling */
+/* Base state (hidden and scaled down) */
+/* Define the keyframes for the fade-in and fade-out animation */
+/* Define the keyframes for the fade-in animation */
+@keyframes fadeInOnce {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Apply the animation to the .nice class */
+.nice {
+  opacity: 0;  /* Start with hidden state */
+  transform: scale(0.8);
+  animation: fadeInOnce 2s ease forwards; /* 2s duration; adjust as needed */
+  animation-fill-mode: forwards; /* Retains the final state after animation */
+}
+/* Define the keyframes for fade-in and fade-out */
+/* Define the keyframes for fade-in and fade-out */
+/* Define the keyframes for the fade-in and fade-out animation */
+/* Define the keyframes for fade-in and fade-out */
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  
+  50% {             /* Midpoint - fully visible */
+    opacity: 0;
+  }
+  100% {        /* At the beginning and end of the animation */
+    opacity: 1;
+  }
+}
+
+/* Apply the fade-in-out animation to the images */
+.best-work-img {
+  animation: fadeInOut 5s forwards;  /* 5s duration; infinite repeat */
+  animation-fill-mode: forwards;     /* Keeps the final state visible */
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  
+  50% {             /* Midpoint - fully visible */
+    opacity: 0;
+  }
+  100% {        /* At the beginning and end of the animation */
+    opacity: 1;
+  }
+}
+
+/* Apply the fade-in-out animation to the images */
+.best-work {
+  animation: fadeInOut 8s forwards;  /* 5s duration; infinite repeat */
+  animation-fill-mode: forwards;     /* Keeps the final state visible */
+}
+.Cry {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.7rem;
+}
+.us {
+  margin-top: 3.7rem;
+  
+}
+.fas {
+  margin-top: 3.7rem;
+  color: red;
+}
+.fedora {
+  margin-top:2rem;
+  font-size: 1rem;
+}
+
+.chux {
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+.dimma {
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+.piss{
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+.lip {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.at {
+  margin-left: 4rem;
+  font-size: 5px;
+}
+.num {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-top: 5rem;
+  margin-left: 4rem;
+}
+.atr {
+  margin-left:2.5rem;
+  margin-top: 3rem;
+}
+.client {
+  background-color:#ff7e1c;
+  margin-top: 2rem;
+  padding: 3rem;
+}
+.milt {
+  background-color: white;
+  color: #3f3c3c;
+  padding: 3rem;
+  
+}
+.container {
+  display: flex;             /* Places elements side-by-side */
+  align-items: center;       /* Vertically centers text with the image */
+}
+
+.image {
+  width: 50px;               /* Set the width */
+  height: 50px;              /* Set the height */
+  border-radius: 50%;        /* Makes the image circular */
+  margin-right: 10px;        /* Adds spacing between the image and text */
+}
+
+.ceo-text {
+  font-size: 16px;           /* Adjust the text size as needed */
+}
+.rule {
+  padding: 0;
+  margin-top: 1rem;
+}
+.anoy {
+  background-color: white;
+  margin-top: 0.1rem
+  
+}
+.help {
+  color: #3f3c3c;
+  font-size: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-bottom: 25px;
+}
+.view {
+  background-color: white; /* Ensures the background color is white */
+  border-radius: 15px; /* Adds rounded corners */
+  
+  transform: translateX(-1rem); /* Moves the element 2rem to the left */
+margin-top: 3rem;
+}
+
+.vve {
+  color: black;
+  font-size: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-top: 1rem;
+
+}
+.more-test {
+  background-color: white; /* Ensures the background color is white */
+  border-radius: 15px; /* Adds rounded corners */
+   /* Adds padding inside the container */
+  transform: translateX(1rem); /* Moves the element 2rem to the left */
+  margin-top: 2rem;
+}
+.still {
+  color: black;
+  font-size: 1rem;
+  margin-left: 5rem;
+  margin-right: 0.6rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+.test {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  
+  margin-top: 2rem;
+  
+  background-color: red;
+  border-radius: 25px;
+  border: 1px solid red;
+  color: white;
+  width: 140px;
+  height: 40px;
+  box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.75);  /* Red glowing shadow */
+  transition: box-shadow 0.3s ease;  /* Smooth transition effect */
+}
+.review {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  
+  background-color: red;
+  border-radius: 25px;
+  border: 1px solid red;
+  color: white;
+  width: 140px;
+  height: 40px;
+  box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.75);  /* Red glowing shadow */
+  transition: box-shadow 0.3s ease;  /* Smooth transition effect */
+}
+.social-icons {
+  text-align: center;
+  display: flex;
+ font-size: 2.5rem;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  
+  
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+}
+#email {
+  width: 150px;
+  height: 48px;
+  border: none;
+}
+#email::placeholder {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+}
+.him  {
+  display: flex;
+  border: none;
+justify-content: center;
+gap: 0.5rem;
+align-items: center;
+}
+.submit {
+  width: 100px;
+  height: 48px;
+  border: none;
+  background-color: #b30b4f;
+  color: white;
+}
+
+
+/* Styling the section items with plus symbols */
+.boutique, .membership, .customer {
+  display: flex;
+  justify-content: space-between; /* Ensures even spacing between text and the plus sign */
+  align-items: center; /* Aligns items vertically */
+  padding: 0.5rem 0; /* Adds spacing for better appearance */
+  border-bottom: 1.5px solid white;
+}
+
+.boutique span, 
+.membership span, 
+.customer span {
+  margin-left: auto; /* Pushes the plus symbol to the far right */
+  font-weight: bold; /* Optional: Makes the symbol bold */
+}
+.fool {
+  opacity: 0.5; /* Adjust the transparency level (0 = fully transparent, 1 = fully opaque) */
+  font-size: 0.8rem;
+}
+ul {
+  text-transform: uppercase;
+}
+/* Reset and Global */
+
+/* Image Slider */
+a {
+  text-decoration: none;
+  color: white;
+}

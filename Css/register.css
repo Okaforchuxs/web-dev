@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, rgb(105, 183, 255), rgb(173, 188, 236), rgb(113, 189, 202));
+    overflow: hidden;
+
+}
+
+img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+.login {
+    width: 300px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    flex-wrap: wrap;
+   
+}
+.signin {
+    width: 300px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white;
+    flex-wrap: wrap;
+}
+
+.greeting {
+    text-align: center;
+    margin-top: 200px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.para {
+    font-size: 1.5rem;
+}
+
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Transparent white border */
+    padding: 8px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Glass effect */
+}
+
+.input-group input {
+    background: transparent; /* Fully transparent input field */
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    color: rgb(7, 7, 7); /* White text */
+}
+
+.input-group input::placeholder {
+    color: rgba(5, 5, 5, 0.7); /* Light white placeholder */
+}
+
+.input-group i {
+    margin-right: 10px;
+    color: rgba(14, 29, 231, 0.8); /* Slightly faded white icons */
+}
+
+.btn {
+    background: #4c00ff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+ a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+ }
